@@ -20,6 +20,9 @@ const LogoutBtn = styled(Button)`
   top: 15px;
   right: 15px;
 `
+const image = {
+  height: "60px"
+}
 
 export default () => {
   const [{ loaded }, dispatch] = useContext(StoreContext)
@@ -32,7 +35,8 @@ export default () => {
 
   return (
     <Navbar>
-      <Headline variant="h1">C : V</Headline>
+      <Headline variant="h1"><img style={image} id="coop-logo" src="/coop-logo.png"></img></Headline>
+      
       {loaded && <LogoutBtn size="sm" variant="dark" onClick={logout}>Logout</LogoutBtn>}
     </Navbar>)
 }
