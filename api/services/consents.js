@@ -5,33 +5,17 @@ const defaultRequest = {
       area: 'baseData',
       description: 'Personal information.',
       permissions: ['read', 'write'],
-      purpose: 'In order to create a CV using our website.',
+      purpose: 'In order to receive special offers.',
       lawfulBasis: 'CONSENT'
     },
     {
       domain: process.env.CLIENT_ID,
       area: 'experience',
-      description: 'A list of your work experiences.',
-      permissions: ['read', 'write'],
-      purpose: 'In order to create a CV using our website.',
+      types: ['READ', 'WRITE'],
+      purpose: 'In order to receive special offers.',
+      description: 'Coop member id',
       lawfulBasis: 'CONSENT'
     },
-    {
-      domain: process.env.CLIENT_ID,
-      area: 'education',
-      description: 'A list of your educations.',
-      permissions: ['read', 'write'],
-      purpose: 'In order to create a CV using our website.',
-      lawfulBasis: 'CONSENT'
-    },
-    {
-      domain: process.env.CLIENT_ID,
-      area: 'languages',
-      description: 'A list of your language proficiencies.',
-      permissions: ['read', 'write'],
-      purpose: 'In order to create a CV using our website.',
-      lawfulBasis: 'CONSENT'
-    }
   ]
 }
 

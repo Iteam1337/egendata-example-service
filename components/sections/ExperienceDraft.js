@@ -24,16 +24,8 @@ export default ({ experienceEntry, onSave, onClose }) => {
         </ModalHeader>
         <ModalBody>
           <FormGroup>
-            <Label>Title</Label>
+            <Label>Skriv in ditt MedlemsID</Label>
             <Input control value={title} id="title" onChange={(e) => setTitle(e.target.value)} onKeyPress={handleKeyPress} />
-            <Label>Employer</Label>
-            <Input control value={employer} id="employer" onChange={(e) => setEmployer(e.target.value)} onKeyPress={handleKeyPress} />
-            <Label>From</Label>
-            <Input control value={fromDate} id="description" onChange={(e) => setFromDate(e.target.value)} onKeyPress={handleKeyPress} type="date" />
-            <Label>To</Label>
-            <Input control value={toDate} id="description" onChange={(e) => setToDate(e.target.value)} onKeyPress={handleKeyPress} type="date" />
-            <Label>Description</Label>
-            <Input control value={description} id="description" onChange={(e) => setDescription(e.target.value)} onKeyPress={handleKeyPress} />
           </FormGroup>
         </ModalBody>
         <ModalFooter>

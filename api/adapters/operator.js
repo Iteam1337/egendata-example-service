@@ -5,8 +5,8 @@ const keyValueStore = require('../services/keyValueStore')
 
 // Configure and create
 const config = {
-  displayName: 'My CV',
-  description: 'An app for your CV online',
+  displayName: 'My Coop account',
+  description: 'An app for saving Coop information',
   iconURI: 'http://localhost:4000/android-icon-96x96.png',
   clientId: process.env.CLIENT_ID || 'http://localhost:4000',
   operator: process.env.OPERATOR_URL || 'http://localhost:3000',
@@ -17,27 +17,15 @@ const config = {
     {
       area: 'baseData',
       types: ['READ', 'WRITE'],
-      purpose: 'In order to create a CV using our website.',
+      purpose: 'In order to receive special offers.',
       description: 'Personal information.'
     },
     {
       area: 'experience',
       types: ['READ', 'WRITE'],
-      purpose: 'In order to create a CV using our website.',
-      description: 'A list of your work experiences.'
+      purpose: 'In order to receive special offers.',
+      description: 'Coop member id'
     },
-    {
-      area: 'education',
-      types: ['READ', 'WRITE'],
-      purpose: 'In order to create a CV using our website.',
-      description: 'A list of your educations.'
-    },
-    {
-      area: 'languages',
-      types: ['READ', 'WRITE'],
-      purpose: 'In order to create a CV using our website.',
-      description: 'A list of your language proficiencies.'
-    }
   ],
   keyValueStore: keyValueStore
 }

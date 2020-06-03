@@ -35,8 +35,6 @@ const Profile = () => (
     <Header />
     <Box>
       <Experience />
-      <Education />
-      <Languages />
     </Box>
   </Box>
 )

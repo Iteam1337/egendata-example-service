@@ -26,15 +26,13 @@ export default () => {
   const getDraft = (i) => typeof i !== 'undefined' ? experience[i] : {}
 
   return (
-    <Section title="Experience" createHandler={() => openModal()}>
+    <Section title="MedlemsID" createHandler={() => openModal()}>
       {experience && experience.map((exp, i) => (
-        <Box mt={5} key={i}>
+        <Box mt={-1} key={i}>
           <Typography variant="h6">
             {exp.title}
             <Button onClick={() => openModal(i)} variant="light" ml={2} size="sm">Edit</Button>
           </Typography>
-          <p>{exp.employer}, {exp.fromDate && exp.fromDate.substring(0, 4)} - {exp.toDate && exp.toDate.substring(0, 4)}</p>
-          <p>{exp.description}</p>
         </Box>
       ))}
       <Modal opened={modalOpen} onClose={() => setModal(false)}>
