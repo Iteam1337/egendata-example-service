@@ -63,6 +63,10 @@ const reducer = (state, action) => {
     case 'SET_TOKEN':
       return { ...state, token: action.payload }
     case 'ERROR':
+      if (action.error.message === "LOAD_DATA") {
+        storage.clearAccessToken()
+        window.location.assign('/')
+      }
       console.error(action.error)
       return { ...state }
     default:
