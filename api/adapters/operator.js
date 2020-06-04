@@ -5,8 +5,8 @@ const keyValueStore = require('../services/keyValueStore')
 
 // Configure and create
 const config = {
-  displayName: 'My Coop account',
-  description: 'An app for saving Coop information',
+  displayName: 'My Telia account',
+  description: 'An app for saving Telia data',
   iconURI: 'http://localhost:4000/android-icon-96x96.png',
   clientId: process.env.CLIENT_ID || 'http://localhost:4000',
   operator: process.env.OPERATOR_URL || 'http://localhost:3000',
@@ -17,14 +17,14 @@ const config = {
     {
       area: 'baseData',
       types: ['READ', 'WRITE'],
-      purpose: 'In order to receive special offers.',
-      description: 'Personal information.'
+      description: 'Personal information.',
+      purpose: 'In order for us to give you better service',
     },
     {
       area: 'experience',
       types: ['READ', 'WRITE'],
-      purpose: 'In order to receive special offers.',
-      description: 'Coop member id'
+      purpose: 'In order to share your location data',
+      description: 'Telia position data',
     },
   ],
   keyValueStore: keyValueStore

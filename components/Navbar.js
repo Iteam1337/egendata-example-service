@@ -35,7 +35,7 @@ export default () => {
 
   return (
     <Navbar>
-      <Headline variant="h1"><img style={image} id="coop-logo" src="/coop-logo.png"></img></Headline>
+      <Headline variant="h1"><img style={image} id="telia-logo" src="/telia-logo.png"></img></Headline>
       
       {loaded && <LogoutBtn size="sm" variant="dark" onClick={logout}>Logout</LogoutBtn>}
     </Navbar>)

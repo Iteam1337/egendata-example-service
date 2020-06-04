@@ -15,11 +15,11 @@ export default () => {
           style={{ backgroundColor: 'white', boxShadow: '3px 3px 7px 7px rgba(0,0,0,0.1)', padding: 50 + 'px', marginTop: 50 + 'px', borderRadius: 2 + 'px' }}
         >
           <Typography variant="h1">
-            Coop Members Page
+            Telia Members' Page
           </Typography>
           <p>Integrates with Egendata - you are in complete control</p>
           <ul style={{ listStyleType: 'circle' }}>
-            <li>See and store your coop data</li>
+            <li>See and store your Telia-data</li>
             <li>Only for testing purposes</li>
           </ul>
           <Button variant="success" onClick={() => window.location.assign('/auth')} style={{ marginTop: 10 + 'px' }}>Login with Egendata</Button>

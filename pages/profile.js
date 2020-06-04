@@ -34,7 +34,8 @@ const Profile = () => (
   >
     <Header />
     <Box>
-      <Experience />
+      <h3>Location data:</h3>
+       <img id="telia-locations" src="/telia-locations-map.png"></img>
     </Box>
   </Box>
 )

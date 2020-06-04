@@ -5,15 +5,15 @@ const defaultRequest = {
       area: 'baseData',
       description: 'Personal information.',
       permissions: ['read', 'write'],
-      purpose: 'In order to receive special offers.',
+      purpose: 'In order for us to give you better service',
       lawfulBasis: 'CONSENT'
     },
     {
       domain: process.env.CLIENT_ID,
       area: 'experience',
       types: ['READ', 'WRITE'],
-      purpose: 'In order to receive special offers.',
-      description: 'Coop member id',
+      purpose: 'In order to share your location data',
+      description: 'Telia position data',
       lawfulBasis: 'CONSENT'
     },
   ]
