@@ -15,7 +15,7 @@ export default () => {
           style={{ backgroundColor: 'white', boxShadow: '3px 3px 7px 7px rgba(0,0,0,0.1)', padding: 50 + 'px', marginTop: 50 + 'px', borderRadius: 2 + 'px' }}
         >
           <Typography variant="h1">
-            Telia Members' Page
+            Telia Customer Page
           </Typography>
           <p>Integrates with Egendata - you are in complete control</p>
           <ul style={{ listStyleType: 'circle' }}>
